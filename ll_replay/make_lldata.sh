@@ -1,14 +1,14 @@
 #!/bin/bash
 
 IFO=K1
-TAG=llhoft
+TAG=lldetchar
 START=1369291863
-END=1369291864
+END=1369300055
 
 python make_lldata.py \
     --ifo ${IFO} \
-    --source /mnt/f/kagra-o4a-data/${IFO}_${TAG} \
+    --source /data/ll_data/${IFO}_${TAG} \
     --start ${START} \
     --end ${END} \
-    --destination /mnt/f/kagra-o4a-data/${TAG}_buffer/${IFO} \
+    --destination /data/ll_data/${TAG}_buffer/${IFO} \
     --tag ${TAG}
