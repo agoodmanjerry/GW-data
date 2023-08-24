@@ -1,9 +1,9 @@
 #!/bin/bash
 
 IFO=K1
-TAG=lldetchar
-START=1369291863
-END=1369300055
+TAG=llhoft
+START=1369300055
+END=1369308247
 
 python make_lldata.py \
     --ifo ${IFO} \

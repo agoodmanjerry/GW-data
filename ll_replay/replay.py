@@ -4,7 +4,7 @@ import os
 import time
 
 replay_start = 1369291863
-duration = 60
+duration = 16384
 keep = 300
 frame_length = 1
 
