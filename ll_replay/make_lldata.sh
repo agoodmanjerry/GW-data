@@ -2,13 +2,13 @@
 
 IFO=K1
 TAG=llhoft
-START=1369291863
-END=1369291864
+START=1369300055
+END=1369308247
 
 python make_lldata.py \
     --ifo ${IFO} \
-    --source /mnt/f/kagra-o4a-data/${IFO}_${TAG} \
+    --source /data/ll_data/${IFO}_${TAG} \
     --start ${START} \
     --end ${END} \
-    --destination /mnt/f/kagra-o4a-data/${TAG}_buffer/${IFO} \
+    --destination /data/ll_data/${TAG}_buffer/${IFO} \
     --tag ${TAG}

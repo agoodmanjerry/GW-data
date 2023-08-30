@@ -27,7 +27,7 @@ def make_ll_gwf(ifo, source, channels, start, end, destination, tag):
     while i < duration:
         ll = data.copy()
         lldata = ll.crop(start + i, start + (i+1), copy=False)
-        lldata.write(f'{destination}/{ifo[0]}-{ifo}-{tag}-{int(lldata[channels[0]].t0.value)}-{int(lldata[channels[0]].duration.value)}.gwf', format='gwf')
+        lldata.write(f'{destination}/{ifo[0]}-{ifo}_{tag}-{int(lldata[channels[0]].t0.value)}-{int(lldata[channels[0]].duration.value)}.gwf', format='gwf')
         i += 1
 
 def main():
