@@ -1,0 +1,15 @@
+universe = vanilla
+executable = /home/chiajui.chou/miniconda3/envs/igwn-py39/bin/python
+arguments = ./get_data.py --ifo $(ifo) --channels $(channels) --start $(start) --end $(end) --destination $(destination)
+
+request_cpus = 8
+request_memory = 8192MB
+request_disk = 4096MB
+getenv = True
+accounting_group = ligo.dev.o4.detchar.subtraction.deepclean
+
+log = get_data.log
+error = get_data.err
+output = get_data.out
+notification = never
+queue 1
